@@ -1,0 +1,63 @@
+body {
+    background-color:rgb(171, 150, 128)
+}
+h1, h2 {
+    text-align: center;
+    font-family: "Delicious Handrawn", serif;
+    font-size: 60px
+}
+h3 {
+    font-family: "delicious handrawn", serif;
+    font-size: 30px
+}
+img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 25px;
+    border: 5px solid rgb(203, 186, 168)
+}
+#head {
+    color: white
+}
+
+#meals {
+    color: white;
+    background-color: rgb(49, 49, 122);
+    border-radius: 25px;
+    border: 5px solid rgb(203, 186, 168)
+}
+#baked {
+    color: white;
+    background-color: rgb(157, 67, 82);
+    border-radius: 25px;
+    border: 5px solid rgb(203, 186, 168)
+}
+#drink {
+    color: white;
+    background-color: rgb(81, 57, 101);
+    border-radius: 25px;
+    border: 5px solid rgb(203, 186, 168)
+}
+/* this is for desktop */
+@media (min-width: 700px) {
+    #container {
+        display: flex;
+        gap: 10px;
+    }
+    #meals {
+        width: 33%
+    }
+    #baked {
+        width: 33%
+    }
+    #drink {
+        width: 33%
+    }
+}
+
+/* this is for mobile */
+@media (max-width: 699px) {
+    .desktop-only {
+        display: none;
+    }
+}
