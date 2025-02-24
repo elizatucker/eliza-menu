@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Eliza's Ideal Breakfast Menu</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,42 +13,52 @@
     <div id="head">
       <h1>Eliza's Ideal Breakfast Menu</h1>
     </div>
+    <div id="cart-icon">
+      <button id="cart-button" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+    <div id="cart-drop" class="cart-drop">
+      <ul id="cart-items"></ul>
+      <button onclick="checkout()">Checkout</button>
+      <p></p>
+    </div>
+
     <button id="button"> Show additional costs </button>
     <p id="disclaimer"></p>
+
     <div id="container">
       <div id="meals">
         <h2>Meals</h2>
-          <ul>
-            <h3>Bagel with Lox ... $10.99</h3>
-              <img src="lox-and-bagels-recipe.jpg" alt="An everything bagel with scallion cream cheese, smoked salmon, thinly sliced cucumbers, thinly sliced red onion, and capers.">
-            <h3>Breakfast Sandwich on Croissant ... $9.99</h3>
-              <img src="The-Speckled-Palate-Croissant-Breakfast-Sandwiches-Image.jpg">
-            <h3>Chorizo Omelette ... $12.99</h3>
-              <img src="chorizo.jpg">
-          </ul>
+        <ul>
+          <h3 class="item" data-name="Bagel with Lox" data-price="10.99">Bagel with Lox ... $10.99 <p></p> <img src="lox-and-bagels-recipe.jpg">
+            <button class="add">Add to Cart</button></h3>
+          <h3 class="item" data-name="Breakfast Sandwich on Croissant" data-price="9.99">Breakfast Sandwich on Croissant ... $9.99 <p></p> <img src="The-Speckled-Palate-Croissant-Breakfast-Sandwiches-Image.jpg">
+            <button class="add">Add to Cart</button></h3>
+          <h3 class="item" data-name="Chorizo Omelette" data-price="12.99">Chorizo Omelette ... $12.99 <p></p> <img src="chorizo.jpg">
+            <button class="add">Add to Cart</button></h3>
+        </ul>
       </div>
       <div id="baked">
         <h2>Baked Goods</h2>
         <ul>
-          <h3>Berry and Lemon Scone ... $4.99</h3>
-            <img src="scone.jpg">
-          <h3>Almond and Orange Croissant ... $4.99</h3>
-            <img src="almond-croissant-1.jpg">
-          <h3>Peach and Blueberry Muffin ... $3.99</h3>
-            <img src="peach-blueberry-muffins-7.jpg">
+          <h3 class="item" data-name="Berry and Lemon Scone" data-price="4.99">Berry and Lemon Scone ... $4.99 <p></p> <img src="scone.jpg">
+            <button class="add">Add to Cart</button></h3>
+          <h3 class="item" data-name="Almond and Orange Croissant" data-price="4.99">Almond and Orange Croissant ... $4.99 <p></p> <img src="almond-croissant-1.jpg">
+            <button class="add">Add to Cart</button></h3>
+          <h3 class="item" data-name="Peach and Blueberry Muffin" data-price="3.99">Peach and Blueberry Muffin ... $3.99 <p></p> <img src="peach-blueberry-muffins-7.jpg">
+            <button class="add">Add to Cart</button></h3>
         </ul>
       </div>
       <div id="drink">
         <h2>Drinks</h2>
-          <ul>
-            <h3>Iced Pistachio Latte ... $5.99</h3>
-              <img src="Pistachio-latte-10.jpg">
-            <h3>Iced Dirty Chai Latte ... $5.99</h3>
-              <img src="iced-chai-tea-latte-recipe-13.jpg">
-            <h3>Hot Spiced Maple Latte ... $5.99</h3>
-              <img src="maple-latte.jpg">
-          </ul>
-        </div>
-     </div>
+        <ul>
+          <h3 class="item" data-name="Iced Pistachio Latte" data-price="5.99">Iced Pistachio Latte ... $5.99 <p></p> <img src="Pistachio-latte-10.jpg">
+            <button class="add">Add to Cart</button></h3>
+          <h3 class="item" data-name="Iced Dirty Chai Latte" data-price="5.99">Iced Dirty Chai Latte ... $5.99 <p></p><img src="iced-chai-tea-latte-recipe-13.jpg">
+            <button class="add">Add to Cart</button></h3>
+          <h3 class="item" data-name="Hot Spiced Maple Latte" data-price="5.99">Hot Spiced Maple Latte ... $5.99 <p></p> <img src="maple-latte.jpg">
+            <button class="add">Add to Cart</button></h3>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

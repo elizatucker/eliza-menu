@@ -14,7 +14,7 @@ button {
     font-family: "delicious handrawn", serif;
     font-size: 30px;
     color: white;
-    background-color:rgb(157, 67, 82);
+    background-color:rgb(124, 52, 64);
     border-radius: 25px;
     border: 3px solid rgb(203, 186, 168);
     height: 50px
@@ -23,6 +23,14 @@ button {
     font-family: "delicious handrawn", serif;
     font-size: 30px;
     color: white;
+}
+#cart-items {
+    font-family: "delicious handrawn", serif;
+    font-size: 30px;
+    color: white;
+}
+#cart-items li {
+    margin: 5px 0;
 }
 img {
     max-width: 150px;
